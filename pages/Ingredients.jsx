@@ -1,16 +1,16 @@
 import { useNavigate } from "react-router";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./Ingredients.css";
 
 export default function Ingredients() {
-  const ingredients = [
+  const [ingredients, setIngredients] = useState([
     "cheddar cheese",
     "eggs",
     "ground beef",
     "garlic",
     "tomatoes",
-  ];
+  ]);
 
   const ingredientsListItem = ingredients.map((ingredient) => (
     <li className="ingredients-list-item" key={ingredient}>
@@ -21,11 +21,13 @@ export default function Ingredients() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Submit button clicked");
+
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get("add-ingredients");
-    // console.log(newIngredient);
-    ingredients.push(newIngredient);
-    console.log(ingredients);
+    console.log(`Added new ingredient: ${newIngredient}`);
+
+    setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+    console.log(`All ingredients: ${ingredients}`);
   }
 
   const navigate = useNavigate();
