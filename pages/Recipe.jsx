@@ -10,7 +10,7 @@ export default function Recipe() {
 
   return (
     <>
-      <div className="recipe-container">
+      <div className="recipe-container fade-in">
         <section className="recipe-card">
           <p>Recipe page</p>
         </section>

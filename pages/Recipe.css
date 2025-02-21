@@ -1,6 +1,6 @@
 .restart-btn {
   background-color: var(--color-highlight);
-  color: var(--color-extralight);
+  padding: 1.25rem 5rem;
 }
 
 /* Extra small devices (phones, 600px and down) */

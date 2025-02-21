@@ -1,10 +1,11 @@
 .introduction-container {
-  margin: 10rem 0;
+  display: grid;
+  gap: 2rem;
   text-align: center;
 }
 
 .introduction-header-container {
-  margin-bottom: 2rem;
+  margin-top: 10rem;
 }
 
 .introduction-header {
@@ -31,6 +32,7 @@
 
 .start-btn {
   background-color: var(--color-highlight);
+  padding: 1.25rem 5rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -55,6 +57,9 @@
 @media only screen and (min-width: 992px) {
   .introduction-container {
     margin: 15rem 0;
+  }
+  .introduction-header-container {
+    margin-top: 0;
   }
   .introduction-header {
     font-size: 7.2rem;
