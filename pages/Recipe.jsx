@@ -21,7 +21,14 @@ export default function Recipe() {
           <p>Recipe page</p>
         </section>
         <section className="recipe-btn-container">
-          <button className="restart-btn" onClick={handleClick}>
+          <button className="download-recipe-btn" aria-label="Download recipe">
+            Download Recipe
+          </button>
+          <button
+            className="restart-btn"
+            onClick={handleClick}
+            aria-label="Restart"
+          >
             Restart
           </button>
         </section>

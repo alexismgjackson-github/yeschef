@@ -33,7 +33,7 @@ export default function Ingredients() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate(`/recipe`);
+    navigate(`/time`);
   }
 
   const { scrollToTop } = useContext(ScrollContext);
@@ -42,8 +42,8 @@ export default function Ingredients() {
 
   return (
     <>
-      <div className="modifications-container fade-in">
-        <section className="modifications-selection-container">
+      <div className="add-ingredients-container fade-in">
+        <section className="add-ingredients-selection-container">
           <h1>What ingredients do you have available?</h1>
           <form className="add-ingredients-form" onSubmit={handleSubmit}>
             <input
@@ -62,8 +62,8 @@ export default function Ingredients() {
         <section className="ingredients-list-container">
           <ul className="ingredients-list">{ingredientsListItem}</ul>
         </section>
-        <section className="modifications-btn-container">
-          <button className="modifications-next-btn" onClick={handleClick}>
+        <section className="ingredients-btn-container">
+          <button className="ingredients-next-btn" onClick={handleClick}>
             Next
           </button>
         </section>

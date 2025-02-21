@@ -5,6 +5,8 @@ import Layout from "../components/Layout/Layout";
 import { ScrollProvider } from "../Context/scroll";
 import Introduction from "../pages/Introduction";
 import Ingredients from "../pages/Ingredients";
+import CookingTime from "../pages/CookingTime";
+import DietaryRestrictions from "../pages/DietaryRestrictions";
 import Recipe from "../pages/Recipe";
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<Introduction />} />
             <Route path="/ingredients" element={<Ingredients />} />
             <Route path="/recipe" element={<Recipe />} />
+            <Route path="/time" element={<CookingTime />} />
+            <Route path="/restrictions" element={<DietaryRestrictions />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,44 +1,27 @@
-.add-ingredients-container {
+.dietary-restrictions-container {
   display: grid;
-  gap: 4rem;
+  gap: 25rem;
   text-align: center;
 }
 
-.add-ingredients-selection-container {
+.dietary-restrictions {
   display: grid;
   gap: 4rem;
 }
 
-.add-ingredients-form {
+.dietary-restrictions-form {
   display: grid;
   gap: 1rem;
 }
 
-.add-ingredients-input {
-  width: 100%;
+.get-recipe-btn {
+  background-color: var(--color-highlight);
 }
 
-.add-ingredients-btn {
+.add-modifications-btn {
   background-color: var(--color-bold);
   padding: 0.75rem 2.5rem;
   max-width: 50rem;
-}
-
-.ingredients-list-container {
-  min-height: 5rem;
-}
-
-.ingredients-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.ingredients-list-item {
-  font-size: 2rem;
-}
-
-.ingredients-next-btn {
-  background-color: var(--color-highlight);
 }
 
 /* Extra small devices (phones, 600px and down) */

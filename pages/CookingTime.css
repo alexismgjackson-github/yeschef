@@ -1,43 +1,26 @@
-.add-ingredients-container {
+.cooking-time-container {
   display: grid;
-  gap: 4rem;
+  gap: 25rem;
   text-align: center;
 }
 
-.add-ingredients-selection-container {
+.cooking-time {
   display: grid;
   gap: 4rem;
 }
 
-.add-ingredients-form {
+.cooking-time-form {
   display: grid;
   gap: 1rem;
 }
 
-.add-ingredients-input {
-  width: 100%;
-}
-
-.add-ingredients-btn {
+.add-cooking-time-btn {
   background-color: var(--color-bold);
   padding: 0.75rem 2.5rem;
   max-width: 50rem;
 }
 
-.ingredients-list-container {
-  min-height: 5rem;
-}
-
-.ingredients-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.ingredients-list-item {
-  font-size: 2rem;
-}
-
-.ingredients-next-btn {
+.cooking-time-next-btn {
   background-color: var(--color-highlight);
 }
 
