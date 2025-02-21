@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router";
+import { useNavigate, useContext } from "react-router";
+import { ScrollContext } from "../Context/scroll";
 import "./Introduction.css";
 
 export default function Introduction() {
@@ -7,6 +8,10 @@ export default function Introduction() {
   function handleClick() {
     navigate(`/modifications`);
   }
+
+  const { scrollToTop } = useContext(ScrollContext);
+
+  scrollToTop();
 
   return (
     <>
