@@ -2,7 +2,7 @@ import { useNavigate, useContext } from "react-router";
 import { ScrollContext } from "../Context/scroll";
 import "./Modifications.css";
 
-export default function Modifications() {
+export default function Ingredients() {
   const ingredients = [
     "cheddar cheese",
     "eggs",

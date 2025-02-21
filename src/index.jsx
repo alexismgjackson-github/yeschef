@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 import { RadioProvider } from "../Context/radios";
 import { ScrollProvider } from "../Context/scroll";
 import Introduction from "../pages/Introduction";
-import Modifications from "../pages/Modifications";
+import Ingredients from "../pages/Ingredients";
 import Recipe from "../pages/Recipe";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Introduction />} />
-            <Route path="/modifications" element={<Modifications />} />
+            <Route path="/ingredients" element={<Ingredients />} />
             <Route path="/recipe" element={<Recipe />} />
           </Route>
         </Routes>

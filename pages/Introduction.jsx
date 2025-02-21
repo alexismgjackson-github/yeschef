@@ -6,7 +6,7 @@ export default function Introduction() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate(`/modifications`);
+    navigate(`/ingredients`);
   }
 
   const { scrollToTop } = useContext(ScrollContext);
