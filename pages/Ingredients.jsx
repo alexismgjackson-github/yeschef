@@ -1,4 +1,5 @@
-import { useNavigate, useContext } from "react-router";
+import { useNavigate } from "react-router";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./Ingredients.css";
 
@@ -17,8 +18,6 @@ export default function Ingredients() {
     </li>
   ));
 
-  const navigate = useNavigate();
-
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Submit button clicked");
@@ -28,6 +27,8 @@ export default function Ingredients() {
     ingredients.push(newIngredient);
     console.log(ingredients);
   }
+
+  const navigate = useNavigate();
 
   function handleClick() {
     navigate(`/recipe`);

@@ -1,4 +1,5 @@
-import { useNavigate, useContext } from "react-router";
+import { useNavigate } from "react-router";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./Introduction.css";
 
