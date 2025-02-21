@@ -1,6 +1,6 @@
 import { useNavigate, useContext } from "react-router";
 import { ScrollContext } from "../Context/scroll";
-import "./Modifications.css";
+import "./Ingredients.css";
 
 export default function Ingredients() {
   const ingredients = [
