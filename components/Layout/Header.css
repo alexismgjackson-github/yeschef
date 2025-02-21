@@ -2,8 +2,3 @@ header {
   background-color: var(--color-light);
   padding: 2rem;
 }
-
-.logo-text {
-  font-family: var(--font-primary);
-  font-size: 2.2rem;
-}
