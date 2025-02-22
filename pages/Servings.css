@@ -1,37 +1,30 @@
-.dietary-restrictions-container {
+.servings-container {
   display: grid;
-  gap: 4rem;
+  gap: 20rem;
   text-align: center;
 }
 
-.dietary-restrictions {
-  display: grid;
+.servings-adjustment {
+  display: flex;
   gap: 4rem;
+  justify-content: center;
 }
 
-.dietary-restrictions-form {
-  display: grid;
-  gap: 1rem;
+.servings {
+  font-size: 6rem;
 }
 
-.add-modification-btn {
+.decrement-servings-btn,
+.increment-servings-btn {
+  align-items: center;
   background-color: var(--color-bold);
-  padding: 0.75rem 2.5rem;
+  display: flex;
+  padding: 0.75rem 2rem;
   max-width: 50rem;
 }
 
-.dietary-restrictions-list {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.restrictions-list-item {
-  font-size: 1.8rem;
-}
-
-.get-recipe-btn {
+.servings-next-btn {
   background-color: var(--color-highlight);
-  padding: 1.25rem 5rem;
 }
 
 /* Extra small devices (phones, 600px and down) */

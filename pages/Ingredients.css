@@ -4,9 +4,9 @@
   text-align: center;
 }
 
-.add-ingredients-selection-container {
+.add-ingredients {
   display: grid;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .add-ingredients-form {
@@ -34,7 +34,7 @@
 }
 
 .ingredients-list-item {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .ingredients-next-btn {
@@ -55,6 +55,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .add-ingredients {
+    display: grid;
+    gap: 5rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

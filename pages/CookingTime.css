@@ -9,19 +9,22 @@
   gap: 4rem;
 }
 
-.cooking-time-form {
-  display: grid;
-  gap: 1rem;
-  margin: auto;
+.cooking-time-adjustment {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
 }
 
-.cooking-time-input {
-  width: 16rem;
+.minutes {
+  font-size: 6rem;
 }
 
-.add-cooking-time-btn {
+.decrement-time-btn,
+.increment-time-btn {
+  align-items: center;
   background-color: var(--color-bold);
-  padding: 0.75rem 2.5rem;
+  display: flex;
+  padding: 0.75rem 2rem;
   max-width: 50rem;
 }
 

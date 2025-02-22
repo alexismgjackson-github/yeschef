@@ -81,14 +81,13 @@ input {
   margin-bottom: 1.5rem;
 }
 
-input[type="text"],
-input[type="number"] {
+input[type="text"] {
   outline: 0.15rem solid var(--color-medium);
+  text-transform: lowercase;
   transition: none;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
+input[type="text"]:focus {
   outline: 0.15rem solid var(--color-bold);
 }
 
@@ -107,7 +106,6 @@ button {
 
 button:hover {
   cursor: pointer;
-  opacity: 0.5;
 }
 
 li {
@@ -126,6 +124,11 @@ li {
 .fade-in {
   animation: fadeIn;
   animation-duration: 2s;
+}
+
+.disable {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 /* Extra small devices (phones, 600px and down) */

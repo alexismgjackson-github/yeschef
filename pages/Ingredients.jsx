@@ -42,7 +42,7 @@ export default function Ingredients() {
   return (
     <>
       <div className="add-ingredients-container fade-in">
-        <section className="add-ingredients-selection-container">
+        <section className="add-ingredients">
           <h1>What ingredients do you have available right now?</h1>
           <form className="add-ingredients-form" onSubmit={handleSubmit}>
             <input

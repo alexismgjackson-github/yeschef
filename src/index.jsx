@@ -6,7 +6,9 @@ import { ScrollProvider } from "../Context/scroll";
 import Introduction from "../pages/Introduction";
 import Ingredients from "../pages/Ingredients";
 import CookingTime from "../pages/CookingTime";
+import Servings from "../pages/Servings";
 import DietaryRestrictions from "../pages/DietaryRestrictions";
+import RecipeQuantity from "../pages/RecipeQuantity";
 import Recipe from "../pages/Recipe";
 
 function App() {
@@ -17,9 +19,11 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Introduction />} />
             <Route path="/ingredients" element={<Ingredients />} />
-            <Route path="/recipe" element={<Recipe />} />
             <Route path="/time" element={<CookingTime />} />
+            <Route path="/servings" element={<Servings />} />
             <Route path="/restrictions" element={<DietaryRestrictions />} />
+            <Route path="/quantity" element={<RecipeQuantity />} />
+            <Route path="/recipe" element={<Recipe />} />
           </Route>
         </Routes>
       </BrowserRouter>
