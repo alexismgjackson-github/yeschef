@@ -17,7 +17,7 @@ export default function DietaryRestrictions() {
     <>
       <div className="dietary-restrictions-container fade-in">
         <section className="dietary-restrictions">
-          <h1>What are your food allergies or restrictions?</h1>
+          <h1>Do you have any food allergies and/or restrictions?</h1>
           <form className="dietary-restrictions-form">
             <input
               type="text"

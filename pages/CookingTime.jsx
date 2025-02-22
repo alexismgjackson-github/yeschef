@@ -17,7 +17,7 @@ export default function CookingTime() {
     <>
       <div className="cooking-time-container fade-in">
         <section className="cooking-time">
-          <h1>How many minutes are you available for?</h1>
+          <h1>How many minutes do you have available for cooking?</h1>
           <form className="cooking-time-form">
             <input
               type="number"
@@ -25,6 +25,7 @@ export default function CookingTime() {
               className="cooking-time-input"
               placeholder="e.g. 60"
               aria-label="Add cooking time"
+              maxLength={3}
               required
             />
             <div className="cooking-time-btn-container">

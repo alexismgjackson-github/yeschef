@@ -12,6 +12,11 @@
 .cooking-time-form {
   display: grid;
   gap: 1rem;
+  margin: auto;
+}
+
+.cooking-time-input {
+  width: 16rem;
 }
 
 .add-cooking-time-btn {

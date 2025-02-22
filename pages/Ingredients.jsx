@@ -5,7 +5,6 @@ import "./Ingredients.css";
 
 export default function Ingredients() {
   const [ingredients, setIngredients] = useState([
-    "cheddar cheese",
     "eggs",
     "ground beef",
     "garlic",
@@ -44,7 +43,7 @@ export default function Ingredients() {
     <>
       <div className="add-ingredients-container fade-in">
         <section className="add-ingredients-selection-container">
-          <h1>What ingredients do you have available?</h1>
+          <h1>What ingredients do you have available right now?</h1>
           <form className="add-ingredients-form" onSubmit={handleSubmit}>
             <input
               type="text"
