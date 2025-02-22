@@ -33,6 +33,7 @@ export default function RecipeQuantity() {
               className="decrement-recipe-quantity-btn"
               aria-label="Decrement amount of recipes"
               onClick={decrementRecipeQuantity}
+              disabled={recipeQuantity === 1}
             >
               <img
                 src="/assets/icons/decrement.svg"
@@ -45,6 +46,7 @@ export default function RecipeQuantity() {
               className="increment-recipe-quantity-btn"
               aria-label="Increment amount of recipes"
               onClick={incrementRecipeQuantity}
+              disabled={recipeQuantity === 5}
             >
               <img
                 src="assets/icons/increment.svg"

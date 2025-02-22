@@ -126,7 +126,7 @@ li {
   animation-duration: 2s;
 }
 
-.disable {
+:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }

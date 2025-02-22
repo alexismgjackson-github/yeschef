@@ -33,6 +33,7 @@ export default function Servings() {
               className="decrement-servings-btn"
               aria-label="Decrement serving size"
               onClick={decrementServings}
+              disabled={servings === 1}
             >
               <img
                 src="/assets/icons/decrement.svg"
@@ -45,6 +46,7 @@ export default function Servings() {
               className="increment-servings-btn"
               aria-label="Increment serving size"
               onClick={incrementServings}
+              disabled={servings === 20}
             >
               <img
                 src="assets/icons/increment.svg"

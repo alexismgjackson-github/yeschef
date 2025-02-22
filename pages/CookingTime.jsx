@@ -33,6 +33,7 @@ export default function CookingTime() {
               className="decrement-time-btn"
               aria-label="Decrement by 10 minutes"
               onClick={decrementMinutes}
+              disabled={minutes === 20}
             >
               <img
                 src="/assets/icons/decrement.svg"
@@ -45,6 +46,7 @@ export default function CookingTime() {
               className="increment-time-btn"
               aria-label="Increment by 10 minutes"
               onClick={incrementMinutes}
+              disabled={minutes === 90}
             >
               <img
                 src="assets/icons/increment.svg"
