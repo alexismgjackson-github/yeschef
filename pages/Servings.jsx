@@ -26,7 +26,7 @@ export default function Servings() {
   return (
     <>
       <div className="servings-container fade-in">
-        <section className="servings">
+        <section className="serving-size">
           <h1>How many people are you cooking for (including yourself)?</h1>
           <div className="servings-adjustment">
             <button

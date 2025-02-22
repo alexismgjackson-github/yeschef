@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.serving-size {
+  display: grid;
+  gap: 4rem;
+}
+
 .servings-adjustment {
   display: flex;
   gap: 4rem;
