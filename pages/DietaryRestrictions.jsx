@@ -4,12 +4,7 @@ import { ScrollContext } from "../Context/scroll";
 import "./DietaryRestrictions.css";
 
 export default function DietaryRestrictions() {
-  const [restrictions, setrestrictions] = useState([
-    "shellfish",
-    "nuts",
-    "milk",
-    "wheat",
-  ]);
+  const [restrictions, setrestrictions] = useState([]);
 
   const restrictionsListItem = restrictions.map((restriction) => (
     <li className="restrictions-list-item" key={restriction}>

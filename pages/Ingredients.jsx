@@ -4,12 +4,7 @@ import { ScrollContext } from "../Context/scroll";
 import "./Ingredients.css";
 
 export default function Ingredients() {
-  const [ingredients, setIngredients] = useState([
-    "eggs",
-    "ground beef",
-    "garlic",
-    "tomatoes",
-  ]);
+  const [ingredients, setIngredients] = useState([]);
 
   const ingredientsListItem = ingredients.map((ingredient) => (
     <li className="ingredients-list-item" key={ingredient}>
