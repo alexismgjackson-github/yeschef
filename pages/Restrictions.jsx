@@ -12,19 +12,15 @@ export default function Restrictions() {
     </li>
   ));
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("Submit button clicked");
-
-    const formData = new FormData(event.currentTarget);
+  function addRestrictions(formData) {
     const newRestriction = formData.get("dietary-restrictions");
+
     console.log(`Added new restriction: ${newRestriction}`);
 
     setrestrictions((prevRestrictions) => [
       ...prevRestrictions,
       newRestriction,
     ]);
-    console.log(`All restrictions: ${restrictions}`);
   }
 
   // console.log(`${restrictions.length} restrictions total`);
@@ -45,7 +41,7 @@ export default function Restrictions() {
           <h1>
             Please enter any food allergies, dislikes and/or restrictions?
           </h1>
-          <form className="dietary-restrictions-form" onSubmit={handleSubmit}>
+          <form className="dietary-restrictions-form" action={addRestrictions}>
             <input
               type="text"
               name="dietary-restrictions"

@@ -12,16 +12,12 @@ export default function Ingredients() {
     </li>
   ));
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("Submit button clicked");
-
-    const formData = new FormData(event.currentTarget);
+  function addIngredient(formData) {
     const newIngredient = formData.get("add-ingredients");
+
     console.log(`Added new ingredient: ${newIngredient}`);
 
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
-    console.log(`All ingredients: ${ingredients}`);
   }
 
   // console.log(`${ingredients.length} ingredients total`);
@@ -41,7 +37,7 @@ export default function Ingredients() {
       <div className="add-ingredients-container fade-in">
         <section className="add-ingredients">
           <h1>Please enter at least 3 ingredients that you have available?</h1>
-          <form className="add-ingredients-form" onSubmit={handleSubmit}>
+          <form className="add-ingredients-form" action={addIngredient}>
             <input
               type="text"
               name="add-ingredients"
