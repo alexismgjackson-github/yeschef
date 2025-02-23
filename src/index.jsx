@@ -7,7 +7,7 @@ import Introduction from "../pages/Introduction";
 import Ingredients from "../pages/Ingredients";
 import CookingTime from "../pages/CookingTime";
 import Servings from "../pages/Servings";
-import DietaryRestrictions from "../pages/DietaryRestrictions";
+import Restrictions from "../pages/Restrictions";
 import RecipeQuantity from "../pages/RecipeQuantity";
 import Recipe from "../pages/Recipe";
 
@@ -21,7 +21,7 @@ function App() {
             <Route path="/ingredients" element={<Ingredients />} />
             <Route path="/time" element={<CookingTime />} />
             <Route path="/servings" element={<Servings />} />
-            <Route path="/restrictions" element={<DietaryRestrictions />} />
+            <Route path="/restrictions" element={<Restrictions />} />
             <Route path="/quantity" element={<RecipeQuantity />} />
             <Route path="/recipe" element={<Recipe />} />
           </Route>

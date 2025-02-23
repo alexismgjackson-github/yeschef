@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router";
 import { useState, useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
-import "./DietaryRestrictions.css";
+import "./Restrictions.css";
 
-export default function DietaryRestrictions() {
+export default function Restrictions() {
   const [restrictions, setrestrictions] = useState([]);
 
   const restrictionsListItem = restrictions.map((restriction) => (
