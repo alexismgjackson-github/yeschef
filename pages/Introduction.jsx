@@ -18,7 +18,7 @@ export default function Introduction() {
     <>
       <div className="introduction-container fade-in">
         <section className="introduction-header-container">
-          <span className="introduction-header">Yes Chef!</span>
+          <span className="introduction-header">Yes, Chef!</span>
         </section>
         <section className="introduction-paragraph-container">
           <span className="introduction-paragraph">

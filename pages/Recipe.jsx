@@ -22,7 +22,7 @@ export default function Recipe() {
         </section>
         <section className="recipe-btn-container">
           <button className="download-recipe-btn" aria-label="Download recipe">
-            Download Recipe
+            Download Recipe As PDF
           </button>
           <button
             className="restart-btn"

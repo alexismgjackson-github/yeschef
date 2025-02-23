@@ -83,7 +83,6 @@ input {
 
 input[type="text"] {
   outline: 0.15rem solid var(--color-medium);
-  text-transform: lowercase;
   transition: none;
 }
 
