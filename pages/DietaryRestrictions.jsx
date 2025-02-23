@@ -27,6 +27,8 @@ export default function DietaryRestrictions() {
     console.log(`All restrictions: ${restrictions}`);
   }
 
+  // console.log(`${restrictions.length} restrictions total`);
+
   const navigate = useNavigate();
 
   function handleClick() {
@@ -40,7 +42,9 @@ export default function DietaryRestrictions() {
     <>
       <div className="dietary-restrictions-container fade-in">
         <section className="dietary-restrictions">
-          <h1>Do you have any food allergies and/or restrictions?</h1>
+          <h1>
+            Please enter any food allergies, dislikes and/or restrictions?
+          </h1>
           <form className="dietary-restrictions-form" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -58,7 +62,11 @@ export default function DietaryRestrictions() {
           <ul className="dietary-restrictions-list">{restrictionsListItem}</ul>
         </section>
         <section className="dietary-restrictions-btn-container">
-          <button className="get-recipe-btn" onClick={handleClick}>
+          <button
+            className="get-recipe-btn"
+            onClick={handleClick}
+            disabled={restrictions.length === 0}
+          >
             Next
           </button>
         </section>

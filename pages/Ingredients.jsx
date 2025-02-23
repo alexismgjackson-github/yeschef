@@ -24,6 +24,8 @@ export default function Ingredients() {
     console.log(`All ingredients: ${ingredients}`);
   }
 
+  // console.log(`${ingredients.length} ingredients total`);
+
   const navigate = useNavigate();
 
   function handleClick() {
@@ -38,7 +40,7 @@ export default function Ingredients() {
     <>
       <div className="add-ingredients-container fade-in">
         <section className="add-ingredients">
-          <h1>What ingredients do you have available right now?</h1>
+          <h1>Please enter at least 3 ingredients that you have available?</h1>
           <form className="add-ingredients-form" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -57,7 +59,11 @@ export default function Ingredients() {
           <ul className="ingredients-list">{ingredientsListItem}</ul>
         </section>
         <section className="ingredients-btn-container">
-          <button className="ingredients-next-btn" onClick={handleClick}>
+          <button
+            className="ingredients-next-btn"
+            onClick={handleClick}
+            disabled={ingredients.length < 3}
+          >
             Next
           </button>
         </section>
