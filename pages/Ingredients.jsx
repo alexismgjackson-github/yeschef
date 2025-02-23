@@ -36,7 +36,7 @@ export default function Ingredients() {
     <>
       <div className="add-ingredients-container fade-in">
         <section className="add-ingredients">
-          <h1>Please enter at least 3 ingredients that you have available?</h1>
+          <h1>Please enter at least 4 ingredients that you have available?</h1>
           <form className="add-ingredients-form" action={addIngredient}>
             <input
               type="text"
@@ -58,7 +58,7 @@ export default function Ingredients() {
           <button
             className="ingredients-next-btn"
             onClick={handleClick}
-            disabled={ingredients.length < 3}
+            disabled={ingredients.length < 4}
           >
             Next
           </button>
