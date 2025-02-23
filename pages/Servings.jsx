@@ -14,6 +14,8 @@ export default function Servings() {
     setServings((prevServings) => prevServings + 1);
   }
 
+  // console.log(`User needs ${servings} serving(s) total`);
+
   const navigate = useNavigate();
 
   function handleClick() {

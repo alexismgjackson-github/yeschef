@@ -16,6 +16,8 @@ export default function CookingTime() {
 
   const navigate = useNavigate();
 
+  // console.log(`Cooking time is ${minutes} minutes`);
+
   function handleClick() {
     navigate(`/servings`);
   }

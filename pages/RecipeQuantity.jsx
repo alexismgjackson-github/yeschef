@@ -14,6 +14,8 @@ export default function RecipeQuantity() {
     setRecipeQuantity((prevRecipeQuantity) => prevRecipeQuantity + 1);
   }
 
+  // console.log(`User wants ${recipeQuantity} recipe(s) total`);
+
   const navigate = useNavigate();
 
   function handleClick() {
@@ -23,6 +25,7 @@ export default function RecipeQuantity() {
   const { scrollToTop } = useContext(ScrollContext);
 
   scrollToTop();
+
   return (
     <>
       <div className="recipe-quantity-container fade-in">
