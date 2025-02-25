@@ -38,12 +38,13 @@ export default function GetRecipe(props) {
                 <ReactMarkdown>{props.recipeShown}</ReactMarkdown>
               </div>
               <div className="recipes-btn-container">
-                <button
+                {/*<button
                   className="download-recipe-btn"
                   aria-label="Download recipe"
+                  download={}
                 >
                   Download PDF
-                </button>
+                </button>*/}
                 <button
                   className="restart-btn"
                   onClick={handleClick}
