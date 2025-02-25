@@ -9,9 +9,6 @@ import Servings from "../pages/Servings";
 import Restrictions from "../pages/Restrictions";
 import GetRecipe from "../pages/GetRecipe";
 
-// apiKey: `${process.env.YES_CHEF_API_KEY}`;
-// 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
-
 export default function App() {
   const [ingredients, setIngredients] = useState([]);
 
