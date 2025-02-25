@@ -1,26 +1,15 @@
 import { useNavigate } from "react-router";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
+
 import "./Ingredients.css";
 
-export default function Ingredients() {
-  const [ingredients, setIngredients] = useState([]);
-
-  const ingredientsListItem = ingredients.map((ingredient) => (
+export default function Ingredients(props) {
+  const ingredientsListItem = props.ingredients.map((ingredient) => (
     <li className="ingredients-list-item" key={ingredient}>
       {ingredient}
     </li>
   ));
-
-  function addIngredient(formData) {
-    const newIngredient = formData.get("add-ingredients");
-
-    console.log(`Added new ingredient: ${newIngredient}`);
-
-    setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
-  }
-
-  // console.log(`${ingredients.length} ingredients total`);
 
   const navigate = useNavigate();
 
@@ -37,7 +26,7 @@ export default function Ingredients() {
       <div className="add-ingredients-container fade-in">
         <section className="add-ingredients">
           <h1>Please enter at least 4 ingredients that you have available?</h1>
-          <form className="add-ingredients-form" action={addIngredient}>
+          <form className="add-ingredients-form" action={props.addIngredient}>
             <input
               type="text"
               name="add-ingredients"
@@ -58,7 +47,7 @@ export default function Ingredients() {
           <button
             className="ingredients-next-btn"
             onClick={handleClick}
-            disabled={ingredients.length < 4}
+            disabled={props.ingredients.length < 4}
           >
             Next
           </button>

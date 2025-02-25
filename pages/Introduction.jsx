@@ -22,8 +22,7 @@ export default function Introduction() {
         </section>
         <section className="introduction-paragraph-container">
           <span className="introduction-paragraph">
-            Get your own personalized recipes while using ingredients that you
-            have on hand.
+            Get your own personalized recipes using ingredients on hand.
           </span>
         </section>
         <section className="introduction-btn-container">

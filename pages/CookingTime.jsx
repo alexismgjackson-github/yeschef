@@ -1,22 +1,10 @@
 import { useNavigate } from "react-router";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./CookingTime.css";
 
-export default function CookingTime() {
-  const [minutes, setMinutes] = useState(20);
-
-  function decrementMinutes() {
-    setMinutes((prevMinutes) => prevMinutes - 10);
-  }
-
-  function incrementMinutes() {
-    setMinutes((prevMinutes) => prevMinutes + 10);
-  }
-
+export default function CookingTime(props) {
   const navigate = useNavigate();
-
-  // console.log(`Cooking time is ${minutes} minutes`);
 
   function handleClick() {
     navigate(`/servings`);
@@ -34,8 +22,8 @@ export default function CookingTime() {
             <button
               className="decrement-time-btn"
               aria-label="Decrement by 10 minutes"
-              onClick={decrementMinutes}
-              disabled={minutes === 20}
+              onClick={props.decrementMinutes}
+              disabled={props.minutes === 20}
             >
               <img
                 src="/assets/icons/decrement.svg"
@@ -43,12 +31,12 @@ export default function CookingTime() {
                 className="decrement-icon"
               />
             </button>
-            <span className="minutes">{minutes}</span>
+            <span className="minutes">{props.minutes}</span>
             <button
               className="increment-time-btn"
               aria-label="Increment by 10 minutes"
-              onClick={incrementMinutes}
-              disabled={minutes === 90}
+              onClick={props.incrementMinutes}
+              disabled={props.minutes === 90}
             >
               <img
                 src="assets/icons/increment.svg"

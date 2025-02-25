@@ -1,21 +1,9 @@
 import { useNavigate } from "react-router";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./Servings.css";
 
-export default function Servings() {
-  const [servings, setServings] = useState(1);
-
-  function decrementServings() {
-    setServings((prevServings) => prevServings - 1);
-  }
-
-  function incrementServings() {
-    setServings((prevServings) => prevServings + 1);
-  }
-
-  // console.log(`User needs ${servings} serving(s) total`);
-
+export default function Servings(props) {
   const navigate = useNavigate();
 
   function handleClick() {
@@ -34,8 +22,8 @@ export default function Servings() {
             <button
               className="decrement-servings-btn"
               aria-label="Decrement serving size"
-              onClick={decrementServings}
-              disabled={servings === 1}
+              onClick={props.decrementServings}
+              disabled={props.servings === 1}
             >
               <img
                 src="/assets/icons/decrement.svg"
@@ -43,12 +31,12 @@ export default function Servings() {
                 className="decrement-icon"
               />
             </button>
-            <span className="servings">{servings}</span>
+            <span className="servings">{props.servings}</span>
             <button
               className="increment-servings-btn"
               aria-label="Increment serving size"
-              onClick={incrementServings}
-              disabled={servings === 20}
+              onClick={props.incrementServings}
+              disabled={props.servings === 20}
             >
               <img
                 src="assets/icons/increment.svg"

@@ -1,34 +1,19 @@
 import { useNavigate } from "react-router";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./Restrictions.css";
 
-export default function Restrictions() {
-  const [restrictions, setrestrictions] = useState([]);
-
-  const restrictionsListItem = restrictions.map((restriction) => (
+export default function Restrictions(props) {
+  const restrictionsListItem = props.restrictions.map((restriction) => (
     <li className="restrictions-list-item" key={restriction}>
       {restriction}
     </li>
   ));
 
-  function addRestrictions(formData) {
-    const newRestriction = formData.get("dietary-restrictions");
-
-    console.log(`Added new restriction: ${newRestriction}`);
-
-    setrestrictions((prevRestrictions) => [
-      ...prevRestrictions,
-      newRestriction,
-    ]);
-  }
-
-  // console.log(`${restrictions.length} restrictions total`);
-
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate(`/quantity`);
+    navigate(`/recipe`);
   }
 
   const { scrollToTop } = useContext(ScrollContext);
@@ -41,7 +26,10 @@ export default function Restrictions() {
           <h1>
             Please enter any food allergies, dislikes and/or restrictions?
           </h1>
-          <form className="dietary-restrictions-form" action={addRestrictions}>
+          <form
+            className="dietary-restrictions-form"
+            action={props.addRestrictions}
+          >
             <input
               type="text"
               name="dietary-restrictions"
@@ -61,7 +49,7 @@ export default function Restrictions() {
           <button
             className="get-recipe-btn"
             onClick={handleClick}
-            disabled={restrictions.length === 0}
+            disabled={props.restrictions.length === 0}
           >
             Next
           </button>
