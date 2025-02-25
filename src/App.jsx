@@ -12,7 +12,7 @@ import GetRecipe from "../pages/GetRecipe";
 export default function App() {
   const [ingredients, setIngredients] = useState([]);
 
-  const [restrictions, setrestrictions] = useState([]);
+  const [restrictions, setRestrictions] = useState([]);
 
   const [minutes, setMinutes] = useState(20);
 
@@ -51,7 +51,7 @@ export default function App() {
 
     console.log(`Added new restriction: ${newRestriction}`);
 
-    setrestrictions((prevRestrictions) => [
+    setRestrictions((prevRestrictions) => [
       ...prevRestrictions,
       newRestriction,
     ]);
@@ -120,6 +120,11 @@ export default function App() {
                   getRecipe={getRecipe}
                   recipeShown={recipeShown}
                   buttonText={buttonText}
+                  setIngredients={setIngredients}
+                  setRestrictions={setRestrictions}
+                  setMinutes={setMinutes}
+                  setServings={setServings}
+                  setRecipeShown={setRecipeShown}
                 />
               }
             />

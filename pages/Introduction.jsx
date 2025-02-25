@@ -3,10 +3,11 @@ import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import "./Introduction.css";
 
-export default function Introduction() {
+export default function Introduction(props) {
   const navigate = useNavigate();
 
   function handleClick() {
+    props.restart;
     navigate(`/ingredients`);
   }
 

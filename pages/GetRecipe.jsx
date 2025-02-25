@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router";
 import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
-// import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./GetRecipe.css";
 
 export default function GetRecipe(props) {
-  // const [buttonText, setButtonText] = useState("Get recipe");
-
-  // const changeText = (text) => setButtonText(text);
-
   const navigate = useNavigate();
 
   function handleClick() {
     navigate(`/`);
+    props.setIngredients([]);
+    props.setRestrictions([]);
+    props.setServings(1);
+    props.setMinutes(20);
+    props.setRecipeShown("");
   }
 
   const { scrollToTop } = useContext(ScrollContext);

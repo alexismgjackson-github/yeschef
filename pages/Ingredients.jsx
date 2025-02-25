@@ -11,6 +11,8 @@ export default function Ingredients(props) {
     </li>
   ));
 
+  console.log(props.ingredients);
+
   const navigate = useNavigate();
 
   function handleClick() {

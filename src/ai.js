@@ -2,10 +2,9 @@ import { HfInference } from "@huggingface/inference";
 
 const SYSTEM_PROMPT = `
  You are an assistant that receives a list of ingredients that a user has and suggests a recipe
- they could make with all of those ingredients. You don't need to use every ingredient they mention 
- in your recipe. The recipe can include additional ingredients they didn't mention, but try not to 
- include too many extra ingredients. Format your response in grammatically correct markdown to make 
- it easier to render to a web page.
+ they could make with all of those ingredients. The recipe can include additional ingredients they 
+ didn't mention, but try not to include too many extra ingredients. Format your response in 
+ grammatically correct markdown to make it easier to render to a web page.
 `;
 
 const hf = new HfInference(`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`);
@@ -29,8 +28,8 @@ export async function getRecipeFromMistral(
         {
           role: "user",
           content: `I have ${ingredientsString}. Please recommend a recipe that can be cooked 
-          in ${cookingTimeNumber} minutes. Please remove ${restrictionsString} and make sure it 
-          has a serving size of ${servingSizeNumber}!`,
+          in ${cookingTimeNumber} minutes. Please do not include ${restrictionsString} in this recipe. 
+          Please make sure the recipe has a serving size of ${servingSizeNumber}.`,
         },
       ],
       max_tokens: 1024,

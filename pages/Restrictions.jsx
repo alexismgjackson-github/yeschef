@@ -10,6 +10,8 @@ export default function Restrictions(props) {
     </li>
   ));
 
+  console.log(props.restrictions);
+
   const navigate = useNavigate();
 
   function handleClick() {
