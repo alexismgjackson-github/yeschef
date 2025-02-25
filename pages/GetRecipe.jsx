@@ -31,20 +31,13 @@ export default function GetRecipe(props) {
             </button>
           ) : null}
         </section>
-        <section className="recipes-container" aria-live="polite">
+        <section className="recipe-container" aria-live="polite">
           {props.recipeShown ? (
-            <div className="recipes">
+            <div className="recipe">
               <div className="markdown">
                 <ReactMarkdown>{props.recipeShown}</ReactMarkdown>
               </div>
-              <div className="recipes-btn-container">
-                {/*<button
-                  className="download-recipe-btn"
-                  aria-label="Download recipe"
-                  download={}
-                >
-                  Download PDF
-                </button>*/}
+              <div className="recipe-btn-container">
                 <button
                   className="restart-btn"
                   onClick={handleClick}
