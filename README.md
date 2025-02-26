@@ -38,7 +38,7 @@ I wanted to build project that generate recipes. Originally I planned on using a
 
 ### _PROMPTING_
 
-- Crafting clear and well-structure prompt to get best response
+- Crafting a clear and well-structured prompt to get best response
 
 ### _RESPONSIVE WEB DESIGN_
 
