@@ -38,7 +38,7 @@ I wanted to build project that generate recipes. Originally I planned on using a
 
 ### _PROMPTING_
 
-- Crafting clear and well-structure prompy to get best results
+- Crafting clear and well-structure prompt to get best response
 
 ### _RESPONSIVE WEB DESIGN_
 
@@ -53,11 +53,12 @@ I wanted to build project that generate recipes. Originally I planned on using a
 
 ## MOST CHALLENGING
 
-- Prompt engineering
+- Prompting
 
 ## BUGS
 
 - Mistral-7B-Instruct-v0.1 delivers good responses 80% of the time
+- Responses can take as long as 30 seconds
 
 ## FUTURE UPDATES
 
