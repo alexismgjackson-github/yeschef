@@ -16,7 +16,7 @@ Yes, Chef! is a fully responsive app allows the user to get tailored recipes bas
 
 ## WHY I BUILT THIS
 
-I wanted to build a project that generated recipes. Originally I planned on using an API but transitioned to AI when I discovered a similiar project in Scrimba's updated React 19 course. The original project's only accounted for the ingredients that the user had on hand. I took what learned from the course and created my own version - overhauling the UI design, implementing React Router and adding more complexity to the instructions (ingredients on hand, dietary restrictions, cooking time and serving size).
+I wanted to build a project that generated recipes. Originally I planned on using an API but transitioned to AI when I discovered a similiar project in Scrimba's updated React 19 course. The original project's only accounted for the ingredients that the user had on hand. I took what learned from the course and created my own version - overhauling the UI design, implementing React Router and adding more complexity to the instructions (ingredients on hand, dietary restrictions, cooking time and serving size). This is an app I will be using on a weekly basis!
 
 ## WHAT I LEARNED
 
