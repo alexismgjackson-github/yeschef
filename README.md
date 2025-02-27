@@ -27,14 +27,13 @@ I wanted to build a project that generated recipes. Originally I planned on usin
 
 ### _USESTATE_
 
-- Managings state of ingredients, dietary restrictions, cooking time and serving size
+- Managing state of ingredients, dietary restrictions, cooking time and serving size
 - Form validation
 - Resetting app's data after the recipe is produced
 
 ### _USEEFFECT_
 
 - Scroll To Top of page for better user experience
-- Clear form inputs of values when the user navigates
 
 ### _PROMPTING_
 
