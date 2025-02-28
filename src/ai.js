@@ -7,7 +7,8 @@ const SYSTEM_PROMPT = `
  grammatically correct markdown to make it easier to render to a web page.
 `;
 
-const hf = new HfInference(`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`);
+// const hf = new HfInference(`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`);
+const hf = new HfInference(import.meta.env.VITE_YESCHEF_API_KEY);
 
 export async function getRecipeFromMistral(
   ingredientsArr,
