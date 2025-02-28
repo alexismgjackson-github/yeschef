@@ -51,6 +51,8 @@ export default function Ingredients(props) {
             onClick={handleClick}
             disabled={props.ingredients.length < 4}
           >
+            {" "}
+            {/* keep this button disabled until the user inputs at least 4 ingredients */}
             Next
           </button>
         </section>

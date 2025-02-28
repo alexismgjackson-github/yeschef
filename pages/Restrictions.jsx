@@ -53,6 +53,7 @@ export default function Restrictions(props) {
             onClick={handleClick}
             disabled={props.restrictions.length === 0}
           >
+            {/* keep this button disabled until the user inputs at least 1 ingredient */}
             Next
           </button>
         </section>

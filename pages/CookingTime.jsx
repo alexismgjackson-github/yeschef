@@ -27,6 +27,7 @@ export default function CookingTime(props) {
               onClick={props.decrementMinutes}
               disabled={props.minutes === 20}
             >
+              {/* disable button when the "minutes" are equal to 20 */}
               <img
                 src="/assets/icons/decrement.svg"
                 alt="Decrement"
@@ -40,6 +41,7 @@ export default function CookingTime(props) {
               onClick={props.incrementMinutes}
               disabled={props.minutes === 90}
             >
+              {/* disable button when the "minutes" are equal to 90 */}
               <img
                 src="assets/icons/increment.svg"
                 alt="Increment"

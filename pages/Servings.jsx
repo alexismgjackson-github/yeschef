@@ -27,6 +27,7 @@ export default function Servings(props) {
               onClick={props.decrementServings}
               disabled={props.servings === 1}
             >
+              {/* disable button when the "servings" are equal to 1 */}
               <img
                 src="/assets/icons/decrement.svg"
                 alt="Decrement"
@@ -38,8 +39,9 @@ export default function Servings(props) {
               className="increment-servings-btn"
               aria-label="Increment serving size"
               onClick={props.incrementServings}
-              disabled={props.servings === 20}
+              disabled={props.servings === 10}
             >
+              {/* disable button when the "servings" are equal to 10 */}
               <img
                 src="assets/icons/increment.svg"
                 alt="Increment"

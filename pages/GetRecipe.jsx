@@ -7,6 +7,8 @@ import "./GetRecipe.css";
 export default function GetRecipe(props) {
   const navigate = useNavigate();
 
+  // reset app to original state when user clicks on "restart" button
+
   function handleClick() {
     navigate(`/`);
     props.setIngredients([]);

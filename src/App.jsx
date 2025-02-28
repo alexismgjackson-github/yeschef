@@ -10,17 +10,19 @@ import Restrictions from "../pages/Restrictions";
 import GetRecipe from "../pages/GetRecipe";
 
 export default function App() {
-  const [ingredients, setIngredients] = useState([]);
+  const [ingredients, setIngredients] = useState([]); // initialize the state variable "ingredients" with an empty array
 
-  const [restrictions, setRestrictions] = useState([]);
+  const [restrictions, setRestrictions] = useState([]); // initialize the state variable "restrictions" with an empty array
 
-  const [minutes, setMinutes] = useState(20);
+  const [minutes, setMinutes] = useState(20); // initialize the state variable "minutes" with the value 20
 
-  const [servings, setServings] = useState(1);
+  const [servings, setServings] = useState(1); // initialize the state variable "servings" with the value 0
 
-  const [recipeShown, setRecipeShown] = useState("");
+  const [recipeShown, setRecipeShown] = useState(""); // initalize the state variable "recipeShown" with an empty string
 
-  const [buttonText, setButtonText] = useState("Get recipe");
+  const [buttonText, setButtonText] = useState("Get recipe"); // initialize the state variable "buttonText" with text "Get recipe"
+
+  // update the state variable a new "ingredient" item taking into account the previous "ingredient" items
 
   function addIngredient(formData) {
     const newIngredient = formData.get("add-ingredients");
@@ -30,21 +32,31 @@ export default function App() {
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
   }
 
+  // update the "minutes" value by decrementing by 10
+
   function decrementMinutes() {
     setMinutes((prevMinutes) => prevMinutes - 10);
   }
+
+  // update the "minutes" value by incrementing by 10
 
   function incrementMinutes() {
     setMinutes((prevMinutes) => prevMinutes + 10);
   }
 
+  // update the "servings" value by decrementing by 1
+
   function decrementServings() {
     setServings((prevServings) => prevServings - 1);
   }
 
+  // update the "servings" value by incrementing by 1
+
   function incrementServings() {
     setServings((prevServings) => prevServings + 1);
   }
+
+  // update the state variable a new "restrictions" item taking into account the previous "restrictions" items
 
   function addRestrictions(formData) {
     const newRestriction = formData.get("dietary-restrictions");
@@ -56,6 +68,10 @@ export default function App() {
       newRestriction,
     ]);
   }
+
+  // when "get recipe" button is click change the text to "loading recipe"
+  // then send the user's data to Mistral to get a response
+  // if the response is successful then send it back as markdown
 
   async function getRecipe() {
     setButtonText("Loading recipe...");
