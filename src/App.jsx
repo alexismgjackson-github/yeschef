@@ -22,7 +22,7 @@ export default function App() {
 
   const [buttonText, setButtonText] = useState("Get recipe"); // initialize the state variable "buttonText" with text "Get recipe"
 
-  // update the state variable a new "ingredient" item taking into account the previous "ingredient" items
+  // update the state variable with a new "ingredient" item taking into account the previous "ingredient" items
 
   function addIngredient(formData) {
     const newIngredient = formData.get("add-ingredients");
@@ -56,7 +56,7 @@ export default function App() {
     setServings((prevServings) => prevServings + 1);
   }
 
-  // update the state variable a new "restrictions" item taking into account the previous "restrictions" items
+  // update the state variable with a new "restrictions" item taking into account the previous "restrictions" items
 
   function addRestrictions(formData) {
     const newRestriction = formData.get("dietary-restrictions");
