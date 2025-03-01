@@ -69,7 +69,7 @@ export default function App() {
     ]);
   }
 
-  // when "get recipe" button is click change the text to "loading recipe"
+  // when "get recipe" button is clicke change the text to "loading recipe"
   // then send the user's data to Mistral to get a response
   // if the response is successful then send it back as markdown
 
