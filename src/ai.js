@@ -1,13 +1,13 @@
 import { HfInference } from "@huggingface/inference";
 
+const hf = new HfInference(import.meta.env.VITE_YESCHEF_API_KEY);
+
 const SYSTEM_PROMPT = `
  You are an assistant that receives a list of ingredients that a user has and suggests a recipe
  they could make with all of those ingredients. The recipe can include additional ingredients they 
  didn't mention, but try not to include too many extra ingredients. Format your response in 
  grammatically correct markdown to make it easier to render to a web page.
 `;
-
-const hf = new HfInference(import.meta.env.VITE_YESCHEF_API_KEY);
 
 export async function getRecipeFromMistral(
   ingredientsArr,
