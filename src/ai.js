@@ -1,6 +1,6 @@
 import { HfInference } from "@huggingface/inference";
 
-const hf = new HfInference(import.meta.env.VITE_YESCHEF_API_KEY);
+const hf = new HfInference(import.meta.env.VITE_YESCHEF_API_KEY); // sending a request to the Mistral AI model
 
 const SYSTEM_PROMPT = `
  You are an assistant that receives a list of ingredients that a user has and suggests a recipe
@@ -15,10 +15,10 @@ export async function getRecipeFromMistral(
   cookingTime,
   servingSize
 ) {
-  const ingredientsString = ingredientsArr.join(", ");
-  const restrictionsString = restrictionsArr.join(", ");
-  const cookingTimeNumber = cookingTime;
-  const servingSizeNumber = servingSize;
+  const ingredientsString = ingredientsArr.join(", "); // array of ingredients to include in the recipe
+  const restrictionsString = restrictionsArr.join(", "); // array of dietary restrictions to avoid in the recipe
+  const cookingTimeNumber = cookingTime; // maximum cooking time for the recipe (in minutes)
+  const servingSizeNumber = servingSize; // number of servings needed for the recipe
 
   try {
     const response = await hf.chatCompletion({
