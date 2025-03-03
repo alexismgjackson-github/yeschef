@@ -56,7 +56,7 @@ I wanted to build a project that generated recipes. Originally I planned on usin
 
 ## BUGS
 
-- Mistral-7B-Instruct-v0.1 delivers good responses 80% of the time
+- Mistral-7B-Instruct-v0.1 delivers good responses 90% of the time
 - Responses can take as long as 30 seconds
 
 ## FUTURE UPDATES
