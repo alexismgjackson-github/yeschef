@@ -28,7 +28,6 @@ I wanted to build a project that generated recipes. Originally I planned on usin
 ### _USESTATE_
 
 - Managing state of ingredients, dietary restrictions, cooking time and serving size
-- Form validation
 - Resetting app's data after the recipe is produced
 
 ### _USEEFFECT_
