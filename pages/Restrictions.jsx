@@ -38,6 +38,7 @@ export default function Restrictions(props) {
               className="dietary-restrictions-input"
               aria-label="Add food allergies or restrictions"
               placeholder="e.g shellfish"
+              required
             />
             <div className="dietary-restrictions-btn-container">
               <button className="add-modification-btn">Add Modification</button>
