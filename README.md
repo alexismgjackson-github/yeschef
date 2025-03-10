@@ -42,7 +42,7 @@ I wanted to build a project that generated recipes. Originally I planned on usin
 
 - Implementing media queries to add device breakpoints
 - Using device breakpoints to change orientation, font size, etc
-- Using CSS Position, Grid and Flexbox
+- Using CSS Grid and Flexbox
 
 ### _ACCESSIBILITY_
 
