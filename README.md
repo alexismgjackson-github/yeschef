@@ -63,4 +63,4 @@ I wanted to build a project that generated recipes. Originally I planned on usin
 - Update to Mistral-7B-Instruct-v0.3
 - Add cuisine specifications
 - Add ability to produce more than one recipe at a time
-- Add a shopping cart to stored saved recipes
+- Add a shopping cart to store recipes
