@@ -27,7 +27,7 @@ export default function App() {
   function addIngredient(formData) {
     const newIngredient = formData.get("add-ingredients");
 
-    console.log(`Added new ingredient: ${newIngredient}`);
+    // console.log(`Added new ingredient: ${newIngredient}`);
 
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
   }
@@ -61,7 +61,7 @@ export default function App() {
   function addRestrictions(formData) {
     const newRestriction = formData.get("dietary-restrictions");
 
-    console.log(`Added new restriction: ${newRestriction}`);
+    // console.log(`Added new restriction: ${newRestriction}`);
 
     setRestrictions((prevRestrictions) => [
       ...prevRestrictions,

@@ -10,7 +10,7 @@ export default function Restrictions(props) {
     </li>
   ));
 
-  console.log(props.restrictions);
+  // console.log(props.restrictions);
 
   const navigate = useNavigate();
 

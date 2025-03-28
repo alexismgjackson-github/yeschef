@@ -11,7 +11,7 @@ export default function Ingredients(props) {
     </li>
   ));
 
-  console.log(props.ingredients);
+  // console.log(props.ingredients);
 
   const navigate = useNavigate();
 
