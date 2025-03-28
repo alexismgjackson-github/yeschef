@@ -15,8 +15,11 @@
 }
 
 .markdown {
+  background-color: hsl(40, 5%, 95%);
+  border-radius: 1rem;
+  padding: 4rem 1.5rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .recipe-btn-container {
