@@ -4,7 +4,7 @@ import { ScrollContext } from "../Context/scroll";
 import "./Servings.css";
 
 export default function Servings(props) {
-  console.log(props.servings);
+  // console.log(props.servings);
 
   const navigate = useNavigate();
 

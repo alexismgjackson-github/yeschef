@@ -4,7 +4,7 @@ import { ScrollContext } from "../Context/scroll";
 import "./CookingTime.css";
 
 export default function CookingTime(props) {
-  console.log(props.minutes);
+  // console.log(props.minutes);
 
   const navigate = useNavigate();
 
