@@ -24,7 +24,13 @@
 }
 
 .recipe-btn-container {
+  display: grid;
   margin: 4rem auto;
+  gap: 3rem;
+}
+
+.download-btn {
+  background-color: var(--color-bold);
 }
 
 .restart-btn {
@@ -37,5 +43,42 @@
 @media only screen and (min-width: 992px) {
   .markdown {
     padding: 4rem 12rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only the recipe container and its children */
+  .recipe-container,
+  .recipe-container * {
+    visibility: visible;
+  }
+
+  /* Ensure recipe content takes up the full page */
+  .recipe-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: white;
+  }
+
+  /* Hide all buttons when printing */
+  .recipe-btn-container {
+    display: none !important;
+  }
+
+  /* Optional: Adjust markdown for print */
+  .markdown {
+    font-size: 1.6rem;
+    padding: 2rem;
+    background-color: white;
+    border: none;
   }
 }

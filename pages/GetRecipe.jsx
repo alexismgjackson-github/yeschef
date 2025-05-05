@@ -39,7 +39,15 @@ export default function GetRecipe(props) {
               <div className="markdown">
                 <ReactMarkdown>{props.recipeShown}</ReactMarkdown>
               </div>
+
               <div className="recipe-btn-container">
+                <button
+                  className="download-btn"
+                  onClick={() => window.print()}
+                  aria-label="Print or Save Recipe as PDF"
+                >
+                  Download PDF
+                </button>
                 <button
                   className="restart-btn"
                   onClick={handleClick}
