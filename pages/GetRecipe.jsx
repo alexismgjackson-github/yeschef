@@ -73,13 +73,6 @@ export default function GetRecipe(props) {
                     )
                   )}
                 </div>
-                <button
-                  className="restart-btn"
-                  onClick={handleClick}
-                  aria-label="Restart"
-                >
-                  Restart
-                </button>
               </div>
             </div>
           ) : null}
