@@ -40,11 +40,11 @@ I wanted to build a project that generated recipes. Originally I planned on usin
 
 - Crafting a clear and well-structured prompt to get best response
 
-## _NAVIGATOR.SHARE_
+### _NAVIGATOR.SHARE_
 
 - navigator.share is part of the Web Share API, which lets your web app trigger the native "share sheet" on supported devices (usually mobile phones and tablets)
 
-## _WINDOW.PRINT_
+### _WINDOW.PRINT_
 
 - window.print() method is a native JavaScript function that opens the browser's print dialog, allowing users to print the current page or save it as a PDF, depending on their browser's capabilities
 
