@@ -39,15 +39,40 @@ export default function GetRecipe(props) {
               <div className="markdown">
                 <ReactMarkdown>{props.recipeShown}</ReactMarkdown>
               </div>
-
               <div className="recipe-btn-container">
-                <button
-                  className="download-btn"
-                  onClick={() => window.print()}
-                  aria-label="Print or Save Recipe as PDF"
-                >
-                  Download PDF
-                </button>
+                <div className="recipe-btn-container">
+                  <button
+                    className="restart-btn"
+                    onClick={handleClick}
+                    aria-label="Restart"
+                  >
+                    Restart
+                  </button>
+                  {window.innerWidth > 768 ? (
+                    <button
+                      className="download-btn"
+                      onClick={() => window.print()}
+                      aria-label="Print or Save Recipe as PDF"
+                    >
+                      Download PDF
+                    </button>
+                  ) : (
+                    navigator.share && (
+                      <button
+                        className="download-btn"
+                        onClick={() =>
+                          navigator.share({
+                            title: "Yes, Chef! Recipe",
+                            text: props.recipeShown,
+                          })
+                        }
+                        aria-label="Share Recipe"
+                      >
+                        Share Recipe
+                      </button>
+                    )
+                  )}
+                </div>
                 <button
                   className="restart-btn"
                   onClick={handleClick}
