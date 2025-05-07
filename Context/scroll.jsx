@@ -1,20 +1,19 @@
 import { createContext, useEffect } from "react";
 
+// Create the ScrollContext
 export const ScrollContext = createContext();
 
 export const ScrollProvider = ({ children }) => {
-  // ensure that the page scrolls to the top smoothly
-
+  // Define the scrollToTop function inside the ScrollProvider component
   const scrollToTop = () => {
-    useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }, []);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
+  // The provider will pass the scrollToTop function to its children
   return (
     <ScrollContext.Provider
       value={{
