@@ -4,15 +4,13 @@ import { useContext } from "react"; // Hook for using context
 import { ScrollContext } from "../Context/scroll"; // Custom scroll context to manage scroll behavior
 import "./Introduction.css"; // Importing styles specific to this component
 
-export default function Introduction(props) {
+export default function Introduction() {
   // Initialize useNavigate hook to navigate between routes
   const navigate = useNavigate();
 
   // Function to handle the "Start" button click
   // This should reset any previous states (like starting a new recipe) and then navigate to the next page
   function handleClick() {
-    // Call the restart function passed via props to reset any prior inputs or state
-    props.restart(); // Fixed: added parentheses to actually call the function
     // Navigate to the ingredients page
     navigate(`/ingredients`);
   }
